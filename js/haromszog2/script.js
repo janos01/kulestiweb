@@ -7,7 +7,6 @@ console.log('Feladat 0306');
 var alap = prompt('Alap: ');
 var magassag = prompt('Magasság: ');
 var terulet = (alap*magassag)/2;
-
 console.log('A háromszög területe: ' + terulet);
 var eredmeny = document.getElementById('eredmeny');
 eredmeny.innerHTML = terulet;

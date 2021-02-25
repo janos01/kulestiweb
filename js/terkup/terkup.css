@@ -1,0 +1,13 @@
+#container {
+    margin: 10%;
+    background-color: orange;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E5851B;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}

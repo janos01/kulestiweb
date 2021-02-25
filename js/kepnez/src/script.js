@@ -34,4 +34,39 @@ for (i = 0; i < kepaz.length; i++) {
     });
 }
 
+let startGomb = document.getElementById('startGomb');
+let stopGomb = document.getElementById('stopGomb');
+let idozito;
+
+startGomb.addEventListener('click', function(){
+    idozito = setInterval('leptet()', 3000);
+});
+
+stopGomb.addEventListener('click', function(){
+    clearTimeout(idozito);
+});
+
+let aktualisKepIndex = 0;
+function leptet() {
+    nagykep.style.backgroundImage = 
+        kepek[aktualisKepIndex].style.backgroundImage;
+    if(aktualisKepIndex < kepek.length-1) {
+        aktualisKepIndex++;
+    }else {
+        aktualisKepIndex = 0;
+    }
+    document.cookie = "aktualisKepIndex=" + aktualisKepIndex + 
+    ";expires=Fri, 31 Dec 2100 23:59:59 GMT";
+    console.log(document.cookie);
+}
+
+
+
+
+
+
+
+
+
+
 

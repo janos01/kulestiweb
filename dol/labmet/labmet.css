@@ -1,0 +1,28 @@
+/* Nagy János, 2021-03-04 esti, szoft I */                                                                                                                     /* Nagy János, 2021-03-04 esti, szoft I */
+
+#container {
+    background-color: orange;
+    margin: 5%;
+    padding: 15px;
+}
+
+#nevjegy {
+    background-color: navy;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    position: fixed;
+    top: 100px;
+    right: -110px;
+    transform: rotate(45deg);
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+}
+
+input {
+    margin-top: 2px;
+}

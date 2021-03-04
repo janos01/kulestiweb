@@ -1,0 +1,38 @@
+/* Nagy János, 2021-03-04, esti szoft I */
+#container {
+    margin: 8%;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 70px;
+}
+
+input {
+    margin-top: 2px;
+}
+
+#eredmeny {
+    display: none;
+}
+
+h1 {
+    font-family: sans;
+}
+
+#nevjegy {
+    background-color: white;
+    border-width: 16px 0;
+    border-style: solid;
+    border-top-color: red;
+    border-bottom-color: green;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    right: -210px;
+    width: 600px;
+    transform: rotate(45deg);
+}

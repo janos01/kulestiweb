@@ -1,0 +1,29 @@
+/* Nagy János, esti szoft I */
+
+#container {
+    margin: 5%;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px #B82121;
+}
+
+label {
+    display: inline-block;
+    width: 70px; 
+}
+
+input {
+    margin-top: 2px;
+}
+
+button {
+    margin: 5px;
+}
+
+#nevjegy {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin: 5%;
+}

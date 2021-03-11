@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>Pulzus</title>
+    <link rel="stylesheet" href="pulzus.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Maximális pulzus számítása</h1>
+        <div id="radiok">
+            <input type="radio" name="cel" id="kezdo" value="0.5">
+            <label for="kezdo">kezdő edzése: 50% alatt</label><br>
+            <input type="radio" name="cel" id="regen" value="0.6">
+            <label for="regen">regeneráló edzés: 50-60%</label><br>
+            <input type="radio" name="cel" id="zsir" value="0.7">
+            <label for="zsir">zsírégető edzés: 60-70%</label><br>
+            <input type="radio" name="cel" id="aerob" value="0.85">
+            <label for="aerob">aerob kapacitás fejlesztése: 70-85%</label><br>
+            <input type="radio" name="cel" id="allokep" value="0.95">
+            <label for="allokep">anaerob állóképesség fejlesztés: 85-95%</label><br>
+            <input type="radio" name="cel" id="robban" value="1">
+            <label for="robban">gyorsaság, robbanékonyság fejlesztése: 95-100%</label><br>
+        </div>
+        <div id="elet">
+            <label>Életkor</label>
+            <input type="text" id="eletkor" placeholder="szám pl. 33"><br>
+            <label>Nyugalmi pulzus</label>
+            <input type="text" id="nyugalmipulzus" placeholder="szám pl. 72">
+        </div>
+        <button id="szamitGomb">Számít</button>
+        <div id="eredmeny">
+            <label>Ajánlott pulzus szám</label>
+            <input type="text" id="ajanlottPulzus">
+        </div>
+    </div>
+    <div id="nevjegy">
+        Nagy János, 2021-03-11, esti szoft I.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="pulzus.js"></script>
+</body>
+</html>

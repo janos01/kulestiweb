@@ -1,0 +1,23 @@
+#container {
+    background-color: orange;
+    margin: 5%;
+    padding: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #EB5608;
+    border-radius: 15px;
+}
+
+#radiok {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+#elet label {
+    display: inline-block;
+    width: 120px;
+    margin-top: 3px;
+}
+#eredmeny {
+    display: none;
+}

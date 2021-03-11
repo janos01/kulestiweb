@@ -1,0 +1,14 @@
+#nevek{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: none;
+    border-collapse: collapse;
+}
+
+#nevek tr td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}

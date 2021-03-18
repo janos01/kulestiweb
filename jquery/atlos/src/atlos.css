@@ -1,0 +1,22 @@
+/*  Nagy János, esti Szoft I, 
+2021-03-18 */
+
+#container {
+    margin: 5%;
+    padding: 15px;
+    background-color: orange;
+    background-image: 
+        -webkit-linear-gradient(
+        left, rgb(0,30,140) 15%, 
+        rgb(72,111, 253) 85%);
+    background-image: 
+        -moz-linear-gradient(left, 
+        rgb(0,30,140) 15%, 
+        rgb(72,111,253) 58%);
+    color: white;
+        
+}
+
+input {
+    margin-top: 3px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu" ng-app="terkup">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="terkupCtrl">
+    <div id="container">
+        <h1>Feladat 0301</h1>
+        <h2>terkup</h2>
+        <p>Egy kör alapú kúp térfogatszámítása</p>
+        
+        <label>Sugár</label>
+        <input type="text" ng-model="sugar">
+        <br>
+        
+        <label>Magasság</label>
+        <input type="text" ng-model="magassag">
+        <br>
+
+        <button ng-click="szamit()">Számít</button>
+        <div id="eredmeny">Térfogat: {{terfogat}}</div>
+    </div>
+</body>
+</html>

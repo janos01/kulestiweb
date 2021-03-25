@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu" ng-app="parkolas">
+<head>
+    <meta charset="utf-8">
+    <title>Bind</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js
+"></script>
+    
+    <script src="script.js"></script>
+    
+</head>
+<body ng-controller="parkolasCtrl">
+    <h1>Bind</h1>
+    
+    
+    <table border="1">
+        <tr ng-repeat="kocsi in kocsik">
+            <td>{{kocsi.rendszam}}</td>
+            <td>{{kocsi.tulaj}}</td>
+        </tr>
+    </table>
+
+    <br><br>
+    
+    <input type="text" ng-model="nev">
+    <p>{{nev}}</p>
+    <p ng-bind="nev"></p>
+
+    <br><br>
+    <label>Szám:</label>
+    <input type="text" ng-model="szam"><br>
+    
+    <button ng-click="
+        eredmeny = szam * 2;
+        szam = '';
+        " ng-disabled="!szam">
+        Dupla
+    </button>
+    <p ng-bind="eredmeny"></p>
+    <p ng-class="'egy'">{{eredmeny}}</p>
+
+</body>
+</html>

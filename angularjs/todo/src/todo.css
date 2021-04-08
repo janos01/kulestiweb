@@ -1,0 +1,11 @@
+#container {
+    margin: 5%;
+    padding: 15px;
+    background-color: #FFA500;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px #8E651B;
+}
+
+#lista {
+    margin-top: 10px;
+}

@@ -1,0 +1,32 @@
+/* Nagy János, 2021-04-15 esti Szoft I */
+
+#container {
+    background-color: #FFA500;
+    margin: 5%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form input {
+    margin-top: 5px;
+}
+
+form label.ki {
+    display: inline-block;
+    width: 250px;
+    text-align: right;
+}
+
+#nevjegy {
+    background-color: #ADD8E6;
+    border-style: solid;
+    border-color: green;
+    border-width: 2px;
+    text-align: center;
+    
+    position: fixed;
+    width: 400px;
+    top: 100px;
+    right: -100px;
+    transform: rotate(45deg);
+}

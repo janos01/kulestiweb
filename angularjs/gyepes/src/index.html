@@ -1,0 +1,39 @@
+<!-- Nagy János, 2021-04-15 esti Szoft I -->
+<!DOCTYPE html>
+<html lang="hu" ng-app="gyepes">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0303</title>
+    <link rel="stylesheet" href="gyepes.css">
+    <script src="https://code.angularjs.org/1.8.2/angular.js"></script>
+    <script src="gyepes.js"></script>
+</head>
+<body ng-controller="gyepesCtrl">
+
+
+    <div id="container">
+        <h1>Feladat 0303</h1>
+        <p>
+        Adott egy kör alakú telek. A telek felének gyepesítését nekünk kell megoldani. Tudjuk, hogy 1 négyzetméter gyepesítése 2500 forintba kerül.
+        </p>
+        <form>
+            <label>A telek átmérője</label>
+            <input type="text" ng-model="atmero"><br>
+            
+            <input type="button" value="Számít"
+            ng-click="szamit($event)"><br>
+            
+            <label class="ki">Ennyi gyeptéglára van szükség (m<sup>2</sup>)</label>
+            <input type="text" ng-model="terulet" disabled><br>
+            <label class="ki">Ennyibe kerül (Ft)</label>
+            <input type="text" ng-model="ar" disabled>
+        </form>
+        <div ng-bind="eredmeny"></div>
+    </div>
+    <div id="nevjegy">
+    Nagy János, 2021-04-15 esti Szoft I
+    </div>
+
+</body>
+</html>

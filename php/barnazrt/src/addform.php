@@ -1,7 +1,14 @@
 <?php
 /* addform.php */
 
-echo "<a href='index.php'>Lista</a><br>";
+echo <<<EOT
+
+<link rel="stylesheet" href="style.css">
+
+<div id="container">
+<a href='index.php'>Lista</a><br>
+
+EOT;
 
 //heredoc szintaxis:
 echo <<<EOT
@@ -18,4 +25,6 @@ echo <<<EOT
     
 </form>
 
+</div>
 EOT;
+

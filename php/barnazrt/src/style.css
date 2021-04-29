@@ -1,0 +1,21 @@
+#container {    
+    background-color: #FFA500;
+    margin: 2% 10%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #FFBC00;
+    margin: 10px;
+}
+
+table tr td {
+    padding: 5px;
+}
+
+table tr th {
+    padding: 5px;
+    background-color: #FFE900;
+}

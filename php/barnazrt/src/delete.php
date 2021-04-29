@@ -1,18 +1,19 @@
 <?php
 
+$az = $_GET['az'];
 $nev = $_GET['nev'];
-$tel = $_GET['tel'];
-$fiz = $_GET['fiz'];
 
 echo <<<EOT
 <link rel="stylesheet" href="style.css">
 
 <div id="container">
 
-    <a href="index.php">Főoldal</a><br><br>
-    Felvett dolgozó:<br>
-    $nev $tel $fiz
+<a href="index.php">Főoldal</a><br><br>
+Törölt dolgozó<br>
+azonosító: $az<br>
+név: $nev
 EOT;
+
 
 $conn = mysqli_connect('localhost',
     'barnazrt', '12345', 'barnazrt');
@@ -24,17 +25,14 @@ if(!$conn) {
 mysqli_set_charset($conn, "utf-8");
 
 $sql = <<<EOT
-insert into dolgozok
-(nev, tel, fiz)
-values
-(?, ?, ?)
+delete from dolgozok
+where az=?
 EOT;
 
 $stmt = mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt, "ssd", $nev, $tel, $fiz);
+mysqli_stmt_bind_param($stmt, "i", $az);
 mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
 
 echo "</div>";
-
